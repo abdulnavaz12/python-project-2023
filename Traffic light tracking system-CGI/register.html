@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistration</title>
+</head>
+<style>
+    legend{
+        text-align: center;
+    }
+    fieldset{
+        height:490px;
+        width:400px;
+        margin-top:100px;
+        border-color: black;
+        box-shadow:inset -3px -3px rgba(0,0,0,0.5);
+        background-color:rgba(0,0,0,0.5);
+        border-radius: 10px;
+        
+    }
+    input{
+        height: 30px;
+        width: 200px;
+        background: transparent;
+        border-radius: 10px;
+        border-block-width: 3px;
+        color:white;
+        background-color:rgba(0,0,0,0.5);
+    }
+    button{
+        height:30;
+        width:150px;
+        background-color:rgba(0,0,0,0.7);
+        border-radius: 10px;
+        color:white;
+    }
+    #chk{
+        height:25px;
+        width:150px;
+        background-color: rgba(0,0,0,0.7);
+    }
+    body{
+        background-image: url("register.jpg");
+        background-size: 1400px;
+                   
+    }
+    a{
+     color:chartreuse;
+    
+    }
+</style>
+<body>
+    <center>
+        <fieldset>
+            <lable><b style="font-size: 25px;color: chartreuse;">Registration</b></lable>
+            <form  action="signup1.py" method="post" >
+                <table border="0px" cellpadding="15px">
+                    <tr>
+                        <td><b style="color:white;">UserName</b></td>
+                        <td><input type="text" name="u" ></td>
+                    </tr>
+                    <tr>
+                        <td><b style="color:white;">Password</b></td>
+                        <td><input type="password" name="p" ></td>
+                    </tr>
+                    <tr>
+                        <td><b style="color:white;">Address</b></td>
+                        <td><input type="text" name="a" ></td>
+                    </tr>
+                    <tr>
+                        <td><b style="color:white;">Contact</b></td>
+                        <td><input type="text" name="c" ></td>
+                    </tr>
+                    <tr>
+                        <td><b style="color:white;">Email</b></td>
+                        <td><input type="email" name="m" ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                                <input  id=chk type="reset" value="Clear">
+                                <button>Register</button>
+                            </center>   
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center><h3><a href="login.html">Login</a></h3></center>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </center>
+</body>
+</html>
